@@ -1,6 +1,6 @@
-#delbertina's Python Script Collection
+# delbertina's Python Script Collection
 
-##UUID Convert to Int Array
+## UUID Convert to Int Array
 - Select an input file with 1 command per line
 - Commands are Minecraft give player head commands that use the <1.16 format of UUIDs
 - Outputs a file with the commands changed over to the new 1.16 UUID int array format using 2's compliment
