@@ -5,7 +5,7 @@ import re
 def give_to_item_object(cmd_input):
     if cmd_input:
         return '  ' + 'Skull-' + str(line_index) + ':\n'\
-               + '    ' + 'Amount: 1\n'\
+               + '    ' + 'Amount: ' + cmd_input.group(3) + '\n'\
                + '    ' + 'Name: "' + cmd_input.group(1) + '"\n'\
                + '    ' + 'Material: \'PLAYER_HEAD\'\n'\
                + '    ' + 'SkullTexture: ' + '\'' + cmd_input.group(2) + '\'\n'
@@ -15,7 +15,7 @@ def give_to_item_object(cmd_input):
 # Line Index
 line_index = 0
 # Regex string
-search_regex = r'\\"text\\":\\"([a-zA-Z0-9:() ]{3,})\\"[\S\s]{3,}"([a-zA-Z0-9+\/=]{170,190})"'
+search_regex = r'\\"text\\":\\"([a-zA-Z0-9!@#$%^&*:() ]{3,})\\"[\S\s]{3,}"([a-zA-Z0-9+\/=]{170,190})"[\D]{3,}([0-9]+)'
 # Input file
 file_in = askopenfilename()
 # Output file to write the result to
