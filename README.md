@@ -19,3 +19,10 @@
 - Outputs a list of SQL queries to delete data found within the polygons from a database
 - Each output query is essentially a line. Would be way faster SQL-wise to find rectangles instead.
 - Originally made to delete data from a CoreProtect's (Spigot plugin) database
+
+## Scrape All Emoji Mashups
+- Replace the URL to scrape all emojis from a specific Emoji Kitchen page
+- Only scrapes the mashup images not regular emojis
+- Uses selenium to allow the page to load fully before grabbing the source
+- Outputs the images to a folder with the current timestamp
+- Originally made to scrape all of the files needed for an App Jam
